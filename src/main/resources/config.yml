@@ -1,0 +1,13 @@
+database-provider: sqlite
+
+database:
+  url: jdbc:postgresql://localhost:5438/groupsystem
+  user: admin
+  password: secret
+
+messages:
+  chatFormat: "[%prefix%] %player%: %message%"
+  joinMessage: "[%prefix%] %player% joined the server!"
+  defaultPrefix: "&7[Default] "
+
+default-group-name: default

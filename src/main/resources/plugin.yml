@@ -1,0 +1,12 @@
+name: groupsystem
+version: '1.0-SNAPSHOT'
+main: org.pexdev.groupsystem.GroupSystemPlugin
+api-version: '1.21'
+
+commands:
+  group:
+    description: Group management commands
+    usage: /group
+
+libraries:
+  - org.postgresql:postgresql:42.6.1

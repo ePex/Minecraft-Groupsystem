@@ -1,0 +1,19 @@
+version: '3.8'
+
+name: mc-group-system
+services:
+  postgres:
+    image: postgres:15.1
+    container_name: groupsystem-postgres
+    environment:
+      - POSTGRES_DB=groupsystem
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secret
+    ports:
+      - "5438:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
